@@ -7,21 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD3C48561C571234003F5E3E /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3C48551C571234003F5E3E /* MovieCell.swift */; };
 		CD92FC401C570C8400366641 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD92FC3F1C570C8400366641 /* AppDelegate.swift */; };
-		CD92FC421C570C8400366641 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD92FC411C570C8400366641 /* ViewController.swift */; };
 		CD92FC451C570C8400366641 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD92FC431C570C8400366641 /* Main.storyboard */; };
 		CD92FC471C570C8400366641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD92FC461C570C8400366641 /* Assets.xcassets */; };
 		CD92FC4A1C570C8400366641 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD92FC481C570C8400366641 /* LaunchScreen.storyboard */; };
+		CD92FC521C570CED00366641 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD92FC511C570CED00366641 /* MoviesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CD3C48551C571234003F5E3E /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		CD92FC3C1C570C8400366641 /* MovieViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD92FC3F1C570C8400366641 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CD92FC411C570C8400366641 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CD92FC441C570C8400366641 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD92FC461C570C8400366641 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD92FC491C570C8400366641 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD92FC4B1C570C8400366641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD92FC511C570CED00366641 /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +37,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD3C48541C571219003F5E3E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CD3C48551C571234003F5E3E /* MovieCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CD3C48571C57123A003F5E3E /* view controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD92FC511C570CED00366641 /* MoviesViewController.swift */,
+			);
+			name = "view controllers";
+			sourceTree = "<group>";
+		};
 		CD92FC331C570C8400366641 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +72,9 @@
 		CD92FC3E1C570C8400366641 /* MovieViewer */ = {
 			isa = PBXGroup;
 			children = (
+				CD3C48571C57123A003F5E3E /* view controllers */,
+				CD3C48541C571219003F5E3E /* Views */,
 				CD92FC3F1C570C8400366641 /* AppDelegate.swift */,
-				CD92FC411C570C8400366641 /* ViewController.swift */,
 				CD92FC431C570C8400366641 /* Main.storyboard */,
 				CD92FC461C570C8400366641 /* Assets.xcassets */,
 				CD92FC481C570C8400366641 /* LaunchScreen.storyboard */,
@@ -136,8 +155,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD92FC421C570C8400366641 /* ViewController.swift in Sources */,
 				CD92FC401C570C8400366641 /* AppDelegate.swift in Sources */,
+				CD92FC521C570CED00366641 /* MoviesViewController.swift in Sources */,
+				CD3C48561C571234003F5E3E /* MovieCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +307,7 @@
 				CD92FC501C570C8400366641 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
