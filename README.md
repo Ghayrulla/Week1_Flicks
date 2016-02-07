@@ -2,14 +2,14 @@
 
 MovieViewer is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-Time spent: 5 hours spent in total
+Time spent: 7 hours spent in total
 
 ## User Stories
 
 The following **required** functionality is complete:
 
 - [Y] User can view a list of movies currently playing in theaters from The Movie Database.
-- [N] Poster images are loaded using the UIImageView category in the AFNetworking library.
+- [Y] Poster images are loaded using the UIImageView category in the AFNetworking library.
 - [N] User sees a loading state while waiting for the movies API.
 - [N] User can pull to refresh the movie list.
 
@@ -34,7 +34,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://raw.githubusercontent.com/Ghayrulla/Week1_Flicks/master/MovieViewer.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://raw.githubusercontent.com/Ghayrulla/Week1_Flicks/master/MovieViewer_2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
