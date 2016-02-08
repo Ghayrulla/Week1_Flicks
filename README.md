@@ -2,7 +2,7 @@
 
 MovieViewer is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-Time spent: 7 hours spent in total
+Time spent: 12 hours spent in total
 
 ## User Stories
 
@@ -10,8 +10,8 @@ The following **required** functionality is complete:
 
 - [Y] User can view a list of movies currently playing in theaters from The Movie Database.
 - [Y] Poster images are loaded using the UIImageView category in the AFNetworking library.
-- [N] User sees a loading state while waiting for the movies API.
-- [N] User can pull to refresh the movie list.
+- [Y] User sees a loading state while waiting for the movies API.
+- [Y] User can pull to refresh the movie list.
 
 The following **optional** features are implemented:
 
