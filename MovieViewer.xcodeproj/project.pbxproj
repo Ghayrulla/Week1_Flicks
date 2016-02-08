@@ -8,18 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		6D88444FD43B94BA0788686E /* Pods_MovieViewer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 052608689D253BC305778D0C /* Pods_MovieViewer.framework */; };
+		CD1B05CE1C6841C300DB798F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD1B05CD1C6841C300DB798F /* DetailViewController.swift */; };
 		CD3C48561C571234003F5E3E /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3C48551C571234003F5E3E /* MovieCell.swift */; };
 		CD92FC401C570C8400366641 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD92FC3F1C570C8400366641 /* AppDelegate.swift */; };
 		CD92FC451C570C8400366641 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD92FC431C570C8400366641 /* Main.storyboard */; };
 		CD92FC471C570C8400366641 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD92FC461C570C8400366641 /* Assets.xcassets */; };
 		CD92FC4A1C570C8400366641 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD92FC481C570C8400366641 /* LaunchScreen.storyboard */; };
 		CD92FC521C570CED00366641 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD92FC511C570CED00366641 /* MoviesViewController.swift */; };
-		CDC104291C681CD400B74E38 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CDC104281C681CD400B74E38 /* MBProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		025FF3A20D0206C4A7EF0F4B /* Pods-MovieViewer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieViewer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieViewer/Pods-MovieViewer.debug.xcconfig"; sourceTree = "<group>"; };
 		052608689D253BC305778D0C /* Pods_MovieViewer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MovieViewer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD1B05CD1C6841C300DB798F /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CD3C48551C571234003F5E3E /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		CD92FC3C1C570C8400366641 /* MovieViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD92FC3F1C570C8400366641 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -29,8 +30,6 @@
 		CD92FC4B1C570C8400366641 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD92FC511C570CED00366641 /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
 		CDA397A75F46F87A52308786 /* Pods-MovieViewer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieViewer.release.xcconfig"; path = "Pods/Target Support Files/Pods-MovieViewer/Pods-MovieViewer.release.xcconfig"; sourceTree = "<group>"; };
-		CDC104271C681CD400B74E38 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = ../MBProgressHUD.h; sourceTree = "<group>"; };
-		CDC104281C681CD400B74E38 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = ../MBProgressHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				CD92FC511C570CED00366641 /* MoviesViewController.swift */,
+				CD1B05CD1C6841C300DB798F /* DetailViewController.swift */,
 			);
 			name = "view controllers";
 			sourceTree = "<group>";
@@ -99,8 +99,6 @@
 		CD92FC3E1C570C8400366641 /* MovieViewer */ = {
 			isa = PBXGroup;
 			children = (
-				CDC104271C681CD400B74E38 /* MBProgressHUD.h */,
-				CDC104281C681CD400B74E38 /* MBProgressHUD.m */,
 				CD3C48571C57123A003F5E3E /* view controllers */,
 				CD3C48541C571219003F5E3E /* Views */,
 				CD92FC3F1C570C8400366641 /* AppDelegate.swift */,
@@ -238,7 +236,7 @@
 				CD92FC401C570C8400366641 /* AppDelegate.swift in Sources */,
 				CD92FC521C570CED00366641 /* MoviesViewController.swift in Sources */,
 				CD3C48561C571234003F5E3E /* MovieCell.swift in Sources */,
-				CDC104291C681CD400B74E38 /* MBProgressHUD.m in Sources */,
+				CD1B05CE1C6841C300DB798F /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
