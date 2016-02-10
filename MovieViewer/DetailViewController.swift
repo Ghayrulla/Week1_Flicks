@@ -17,10 +17,17 @@ class DetailViewController: UIViewController {
     
     @IBOutlet weak var overviewLabel: UILabel!
     
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    @IBOutlet weak var infoView: UIView!
+    
     var movie: NSDictionary!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        scrollView.contentSize = CGSize(width: scrollView.frame.size.width, height:infoView.frame.origin.y + infoView.frame.size.height)
+        
         
         let title = movie["title"] as? String
         titleLabel.text = title
@@ -28,6 +35,8 @@ class DetailViewController: UIViewController {
         let overview = movie["overview"]
         overviewLabel.text = overview as? String
         // Do any additional setup after loading the view.
+        
+        overviewLabel.sizeToFit()
         
         let baseUrl = "http://image.tmdb.org/t/p/w500"
         
