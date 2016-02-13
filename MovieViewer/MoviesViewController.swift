@@ -14,6 +14,8 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
     
     @IBOutlet weak var tableView: UITableView!
     
+    
+    
     var movies: [NSDictionary]? 
     
     var endpoint: String!
@@ -162,6 +164,12 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         let overview = movie["overview"] as! String
         cell.titleLabel.text = title
         cell.overviewLabel.text = overview
+        cell.selectionStyle = .None
+        
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = UIColor.grayColor()
+        cell.selectedBackgroundView = backgroundView
+     
         let baseUrl = "http://image.tmdb.org/t/p/w500"
         
         if let posterPath = movie["poster_path"] as? String {
@@ -170,6 +178,15 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         }
         return cell
         
+    }
+    
+    //Style
+    enum UITableViewCellSelectionStyle : Int {
+        
+        case None
+        case Blue
+        case Gray
+        case Default
     }
     
     // MARK: - Navigation
