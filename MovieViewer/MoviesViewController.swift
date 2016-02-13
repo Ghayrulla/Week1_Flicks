@@ -164,7 +164,7 @@ class MoviesViewController: UIViewController, UITableViewDataSource, UITableView
         let overview = movie["overview"] as! String
         cell.titleLabel.text = title
         cell.overviewLabel.text = overview
-        cell.selectionStyle = .None
+        cell.selectionStyle = .Gray
         
         let backgroundView = UIView()
         backgroundView.backgroundColor = UIColor.grayColor()
